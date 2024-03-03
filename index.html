@@ -68,55 +68,46 @@
             height: 50vh; /* Adjust height as needed */
             border: none;
         }
+    .button-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px; /* Adjusts the space between buttons */
+        margin-top: 20px;
+    }
     .button {
         display: inline-block;
         padding: 10px 20px;
-        margin: 5px;
         text-decoration: none;
         border-radius: 5px;
         cursor: pointer;
         font-weight: bold;
-        transition: background-color 0.3s;
+        transition: background-color 0.3s, color 0.3s;
+        font-size: 16px; /* Ensures text is easily readable */
     }
-    .survey-button {
-        background-color: #007bff;
+    .results-button {
+        background-color: #4CAF50; /* Green, for success/results */
         color: white;
     }
     .github-button {
-        background-color: #000000;
+        background-color: #000000; /* GitHub's color */
         color: white;
     }
     .button:hover {
         opacity: 0.8;
     }
-        .header {
-            margin-bottom: 20px;
-            font-size: 24px;
-        }
+    .header {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
     </style>
 </head>
+<body>
 <body>
     <div class="header">Block Survey for Developer Tooling</div>
     <div class="iframe-container">
         <iframe src="https://blocksurvey.io/developer-tooling-survey-acZ7HI0pRRCJaf3pa9WggA?v=o" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    </div>
-    <a href="https://blocksurvey.io/developer-tooling-survey-acZ7HI0pRRCJaf3pa9WggA?v=o" target="_blank" class="button">Take the Survey</a>
-    <a href="https://github.com/mattmajestic/github-page-survey" target="_blank" class="button">GitHub Repository</a>
-</body>
-</html>
-
-        .header {
-            margin-bottom: 20px;
-            font-size: 24px;
-        }
-    </style>
-</head>
-<body>
-    <div class="header">Block Survey for Developer Tooling</div>
-    <div class="iframe-container">
-        <iframe src="https://blocksurvey.io/developer-tooling-survey-acZ7HI0pRRCJaf3pa9WggA?v=o" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    </div>
-    <a href="https://blocksurvey.io/developer-tooling-survey-acZ7HI0pRRCJaf3pa9WggA?v=o" target="_blank" class="button survey-button">📝 Take the Survey</a>
+    </div>    
+    <a href="https://blocksurvey.io/public/report/95c53bf8-3083-4cea-af0a-80f53e293127" target="_blank" class="button results-button">📊 View Results</a>
     <a href="https://github.com/mattmajestic/github-page-survey" target="_blank" class="button github-button">👨‍💻 GitHub Repository</a>
 </body>
 </html>
