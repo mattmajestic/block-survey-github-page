@@ -1,6 +1,6 @@
-# Developer Tooling Survey 🛠
+# Block Survey for Developer Tooling 🛠
 
-Help us enhance Dev Experience in this repo by sharing your thoughts in our quick survey! 🚀
+Help us enhance Dev Experience in this repo by sharing your thoughts in our quick survey from Block Survey! 🚀
 
 ## 📝 Take the Survey
 
