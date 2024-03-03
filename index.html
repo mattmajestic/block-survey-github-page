@@ -3,39 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Tooling Survey</title>
+    <title>Block Survey for Developer Tooling</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛠</text></svg>">
     <style>
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
             background-color: #f4f4f4;
-            overflow: hidden; /* Prevents scrolling caused by the transformation */
+            overflow: auto; /* Allows scrolling if content overflows */
         }
         .iframe-container {
-            width: 30%; /* Adjust based on your preference */
-            height: 60vh; /* Adjust based on your preference, keeping the aspect ratio */
+            width: 60%; /* Container width */
+            height: 60vh; /* Container height, adjust based on your preference */
             overflow: hidden; /* Hides the parts of the iframe outside this container */
             position: relative;
             border-radius: 4px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            transform: scale(1.1); /* Adjust scale as needed; 1.1 zooms to 110% */
-            transform-origin: center;
+            display: flex;
+            justify-content: center; /* Center iframe horizontally */
+            align-items: center; /* Center iframe vertically */
+            margin-bottom: 20px; /* Space between iframe and buttons */
         }
         iframe {
-            width: 50%; /* Ensures iframe fills the container */
+            width: 50%; /* Half the width of its container */
             height: 50vh; /* Adjust height as needed */
             border: none;
-            position: absolute;
+        }
+        .button {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .header {
+            margin-bottom: 20px;
+            font-size: 24px;
         }
     </style>
 </head>
 <body>
+    <div class="header">Block Survey for Developer Tooling</div>
     <div class="iframe-container">
         <iframe src="https://blocksurvey.io/developer-tooling-survey-acZ7HI0pRRCJaf3pa9WggA?v=o" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
+    <a href="https://blocksurvey.io/developer-tooling-survey-acZ7HI0pRRCJaf3pa9WggA?v=o" target="_blank" class="button">Take the Survey</a>
+    <a href="https://github.com/mattmajestic/github-page-survey" target="_blank" class="button">GitHub Repository</a>
 </body>
 </html>
