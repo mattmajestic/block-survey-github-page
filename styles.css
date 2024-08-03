@@ -7,6 +7,8 @@
     --button-dark: #333333;
     --button-text-light: #ffffff;
     --button-text-dark: #39ff14;
+    --footer-text-light: #000000;
+    --footer-text-dark: #ffffff;
 }
 
 body {
@@ -25,7 +27,8 @@ body {
 .theme-toggle-container {
     position: absolute;
     top: 20px;
-    right: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #theme-toggle {
@@ -96,6 +99,21 @@ iframe {
     font-size: 24px;
 }
 
+footer {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.footer-link {
+    color: var(--footer-text-light);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
 /* Dark theme styles */
 body.dark {
     background-color: var(--background-dark);
@@ -108,9 +126,14 @@ body.dark .results-button {
 }
 
 body.dark .github-button {
+    background-color: var(--button-dark);
     color: var(--button-text-dark);
 }
 
 body.dark #theme-icon {
     color: var(--text-dark);
+}
+
+body.dark .footer-link {
+    color: var(--footer-text-dark);
 }
