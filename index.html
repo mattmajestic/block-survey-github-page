@@ -5,74 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Block Survey for Developer Tooling</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛠</text></svg>">
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f4f4f4;
-            overflow: auto; /* Allows scrolling if content overflows */
-        }
-        .iframe-container {
-            width: 60%; /* Container width */
-            height: 60vh; /* Container height, adjust based on your preference */
-            overflow: hidden; /* Hides the parts of the iframe outside this container */
-            position: relative;
-            border-radius: 4px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            display: flex;
-            justify-content: center; /* Center iframe horizontally */
-            align-items: center; /* Center iframe vertically */
-            margin-bottom: 20px; /* Space between iframe and buttons */
-        }
-        iframe {
-            width: 50%; /* Half the width of its container */
-            height: 50vh; /* Adjust height as needed */
-            border: none;
-        }
-    .button-container {
-        display: flex;
-        justify-content: center;
-        gap: 20px; /* Adjusts the space between buttons */
-        margin-top: 20px;
-    }
-    .button {
-        display: inline-block;
-        padding: 10px 20px;
-        text-decoration: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-weight: bold;
-        transition: background-color 0.3s, color 0.3s;
-        font-size: 16px; /* Ensures text is easily readable */
-    }
-    .results-button {
-        background-color: #4CAF50; /* Green, for success/results */
-        color: white;
-    }
-    .github-button {
-        background-color: #000000; /* GitHub's color */
-        color: white;
-    }
-    .button:hover {
-        opacity: 0.8;
-    }
-    .header {
-        margin-bottom: 20px;
-        font-size: 24px;
-    }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<body>
+    <div class="theme-toggle-container">
+        <button id="theme-toggle">Toggle Theme</button>
+    </div>
     <div class="header">Block Survey for Developer Tooling</div>
     <div class="iframe-container">
         <iframe src="https://blocksurvey.io/developer-tooling-survey-acZ7HI0pRRCJaf3pa9WggA?v=o" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>    
-    <a href="https://blocksurvey.io/public/report/95c53bf8-3083-4cea-af0a-80f53e293127" target="_blank" class="button results-button">📊 View Results</a>
-    <a href="https://github.com/mattmajestic/github-page-survey" target="_blank" class="button github-button">👨‍💻 GitHub Repository</a>
+    <div class="button-container">
+        <a href="https://blocksurvey.io/public/report/95c53bf8-3083-4cea-af0a-80f53e293127" target="_blank" class="button results-button">📊 View Results</a>
+        <a href="https://github.com/mattmajestic/github-page-survey" target="_blank" class="button github-button">👨‍💻 GitHub Repository</a>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

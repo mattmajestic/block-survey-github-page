@@ -1,0 +1,98 @@
+:root {
+    --background-light: #f4f4f4;
+    --background-dark: #1e1e1e;
+    --text-light: #000000;
+    --text-dark: #ffffff;
+    --button-light: #4CAF50;
+    --button-dark: #333333;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--background-light);
+    color: var(--text-light);
+    overflow: auto; /* Allows scrolling if content overflows */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-toggle-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.iframe-container {
+    width: 60%; /* Container width */
+    height: 60vh; /* Container height, adjust based on your preference */
+    overflow: hidden; /* Hides the parts of the iframe outside this container */
+    position: relative;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center; /* Center iframe horizontally */
+    align-items: center; /* Center iframe vertically */
+    margin-bottom: 20px; /* Space between iframe and buttons */
+}
+
+iframe {
+    width: 50%; /* Half the width of its container */
+    height: 50vh; /* Adjust height as needed */
+    border: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjusts the space between buttons */
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 16px; /* Ensures text is easily readable */
+}
+
+.results-button {
+    background-color: var(--button-light);
+    color: var(--text-dark);
+}
+
+.github-button {
+    background-color: #000000; /* GitHub's color */
+    color: var(--text-dark);
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.header {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Dark theme styles */
+body.dark {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+body.dark .results-button {
+    background-color: var(--button-dark);
+    color: var(--text-light);
+}
+
+body.dark .github-button {
+    color: var(--text-light);
+}
