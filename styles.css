@@ -57,7 +57,7 @@ body {
 }
 
 iframe {
-    width: 100%; /* Full width of its container */
+    width: 80%; /* Full width of its container */
     height: 100%; /* Full height of its container */
     border: none;
 }
@@ -96,7 +96,7 @@ iframe {
 
 .header {
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 30px;
 }
 
 footer {
