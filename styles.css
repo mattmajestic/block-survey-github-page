@@ -1,10 +1,12 @@
 :root {
     --background-light: #f4f4f4;
-    --background-dark: #1e1e1e;
+    --background-dark: #000000;
     --text-light: #000000;
-    --text-dark: #ffffff;
+    --text-dark: #39ff14;
     --button-light: #4CAF50;
     --button-dark: #333333;
+    --button-text-light: #ffffff;
+    --button-text-dark: #39ff14;
 }
 
 body {
@@ -26,6 +28,18 @@ body {
     right: 20px;
 }
 
+#theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+#theme-icon {
+    font-size: 24px;
+}
+
 .iframe-container {
     width: 60%; /* Container width */
     height: 60vh; /* Container height, adjust based on your preference */
@@ -40,8 +54,8 @@ body {
 }
 
 iframe {
-    width: 50%; /* Half the width of its container */
-    height: 50vh; /* Adjust height as needed */
+    width: 100%; /* Full width of its container */
+    height: 100%; /* Full height of its container */
     border: none;
 }
 
@@ -65,12 +79,12 @@ iframe {
 
 .results-button {
     background-color: var(--button-light);
-    color: var(--text-dark);
+    color: var(--button-text-light);
 }
 
 .github-button {
     background-color: #000000; /* GitHub's color */
-    color: var(--text-dark);
+    color: var(--button-text-light);
 }
 
 .button:hover {
@@ -90,9 +104,13 @@ body.dark {
 
 body.dark .results-button {
     background-color: var(--button-dark);
-    color: var(--text-light);
+    color: var(--button-text-dark);
 }
 
 body.dark .github-button {
-    color: var(--text-light);
+    color: var(--button-text-dark);
+}
+
+body.dark #theme-icon {
+    color: var(--text-dark);
 }
