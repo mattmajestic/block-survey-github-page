@@ -1,0 +1,23 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - gh-pages 
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Upload artifact for GitHub Pages
+      uses: actions/upload-pages-artifact@v1
+      with:
+        path: ./  # Deploy the root directory
+
+    - name: Deploy to GitHub Pages
+      id: deploy
+      uses: actions/deploy-pages@v1
