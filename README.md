@@ -12,6 +12,7 @@ Your insights are crucial 🌟. Participate [here](https://mattmajestic.github.i
 - `styles.css`: The CSS file that contains the styles for the page.
 - `script.js`: The JavaScript file that handles theme toggling and data loading.
 - `data/bs-data.json`: The JSON file that contains the URLs for the survey iframe and results button.
+- `data/gh-data.json`: The JSON file that contains the URL for Github.
 - `data/socials-data.json`: The JSON file that contains the social media links and icons.
 
 ### Block Survey Setup 🎫 
@@ -30,5 +31,5 @@ Here is how to update the Github Page after you have createding a survey with Bl
 
 1) Clone or Fork my Code to `gh-pages`
 2) Go to the data/ directory and update the links for `bs-data.json`, `gh-data.json` & `socials-data.json`.
-3) Repo Settings > Pages> Setup Page from branch 'gh-pages'
+3) Repo Settings > Pages > Setup Page from branch 'gh-pages'
 4) Check Page to ensure current Survey
