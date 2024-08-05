@@ -51,3 +51,16 @@ fetch('data/socials-data.json')
         });
     })
     .catch(error => console.error('Error loading social media data:', error));
+
+document.addEventListener('DOMContentLoaded', () => {
+    const starContainer = document.querySelector('.stars');
+
+    for (let i = 0; i < 150; i++) {
+        const star = document.createElement('div');
+        star.classList.add('star');
+        star.style.top = Math.random() * 100 + '%';
+        star.style.left = Math.random() * 100 + '%';
+        star.style.animationDelay = Math.random() * 2 + 's';
+        starContainer.appendChild(star);
+    }
+});
